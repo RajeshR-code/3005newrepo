@@ -5,13 +5,6 @@ resource "azurerm_resource_group" "myrg" {
 }
 
 
-resource "azurerm_resource_group" "myrg-fortesting" {
-    name = "rr-rg-fortesting"
-    location = "westeurope"
-  
-}
-
-
 resource "azurerm_virtual_network" "myvnet" {
     name = "r-vnet"
     resource_group_name = azurerm_resource_group.myrg.name
